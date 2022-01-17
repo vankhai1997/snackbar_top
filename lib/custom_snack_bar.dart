@@ -117,8 +117,7 @@ class _CustomSnackBarState extends State<CustomSnackBar> {
             Positioned(
               top: widget.iconPositionTop,
               left: widget.iconPositionLeft,
-              child: Container(
-                height: 95,
+              child: IntrinsicHeight(
                 child: Transform.rotate(
                   angle: widget.iconRotationAngle * pi / 180,
                   child: widget.icon,
