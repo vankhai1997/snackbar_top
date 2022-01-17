@@ -104,6 +104,7 @@ class _CustomSnackBarState extends State<CustomSnackBar> {
     final theme = Theme.of(context);
     return IntrinsicHeight(
       child: Container(
+        padding: widget.padding,
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(
           color: widget.backgroundColor,

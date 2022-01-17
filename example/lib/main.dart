@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
@@ -34,6 +35,7 @@ class _MyAppState extends State<MyApp> {
                         CustomSnackBar.info(
                           message:
                               "There is some information. You need to do something with that",
+                          padding: EdgeInsets.symmetric(vertical: 16),
                         ),
                       );
                     },
