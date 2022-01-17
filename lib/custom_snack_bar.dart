@@ -37,7 +37,7 @@ class CustomSnackBar extends StatefulWidget {
     this.iconRotationAngle = 32,
     this.iconPositionTop = -10,
     this.iconPositionLeft = -8,
-    this.textAlign =TextAlign.center,
+    this.textAlign = TextAlign.center,
     this.backgroundColor = const Color(0xff00E676),
     this.boxShadow = kDefaultBoxShadow,
     this.borderRadius = kDefaultBorderRadius,
@@ -62,7 +62,7 @@ class CustomSnackBar extends StatefulWidget {
     this.iconRotationAngle = 32,
     this.iconPositionTop = -10,
     this.iconPositionLeft = -8,
-    this.textAlign =TextAlign.center,
+    this.textAlign = TextAlign.center,
     this.backgroundColor = const Color(0xff2196F3),
     this.boxShadow = kDefaultBoxShadow,
     this.borderRadius = kDefaultBorderRadius,
@@ -84,7 +84,7 @@ class CustomSnackBar extends StatefulWidget {
       fontSize: 16,
       color: Colors.white,
     ),
-    this.textAlign =TextAlign.center,
+    this.textAlign = TextAlign.center,
     this.iconRotationAngle = 32,
     this.iconPositionTop = -10,
     this.iconPositionLeft = -8,
@@ -123,7 +123,8 @@ class _CustomSnackBarState extends State<CustomSnackBar> {
                 ),
               ),
             ),
-            Center(
+            Align(
+              alignment: Alignment.centerLeft,
               child: Padding(
                 padding: widget.messagePadding,
                 child: Text(
@@ -131,7 +132,7 @@ class _CustomSnackBarState extends State<CustomSnackBar> {
                   style: theme.textTheme.bodyText2?.merge(
                     widget.textStyle,
                   ),
-                  textAlign:widget.textAlign,
+                  textAlign: widget.textAlign,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 2,
                   textScaleFactor: widget.textScaleFactor,
